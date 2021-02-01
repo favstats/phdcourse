@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Political Microtargeting</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="PhD project by Fabio Votta" />
+    <meta name="date" content="2021-02-01" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Political Microtargeting
+## How is microtargeting used in practice<br>and how does it effect citizens and society?
+### PhD project by Fabio Votta
+### 2021-02-01
+
+---
+
+
+
+
+
+
+class: center, middle, inverse
+
+
+## Main research question:
+
+### 1. How are political ads microtargeted in practice?
+### 2. What is the effect of being exposed to microtargeted political campaigns?
+
+
+---
+
+## Paper ideas
+
+1. How are political ads microtargeted in practice?
+
+  + Paper I: Going Micro to Go Negative
+  
+     + What role does microtargeting play for negative campaigning?
+     
+--
+
+  + Paper II: Targeting different voters with different messages
+  
+     + How do political advertisers use targeted political ads, do they tailor their messages to certain voter groups and if so, to which degree and with which messages?
+     
+--
+  
+2. What is the effect of being exposed to microtargeted political campaigns?
+
+  + Paper III: Effects of being exposed to Microtargeted Campaign
+  
+      + What are the effects of being exposed to targeted political ads on Facebook during the 2021 German general elections?
+
+---
+
+
+class: center, middle, inverse
+
+
+## Paper I: Going Micro to Go Negative
+
+---
+
+## Negative campaigning
+
+Negative advertising is a type of advertising that highlights alleged weaknesses of the competitor.
+
+Negative campaign tactics can include painting an opponent as:
+
++ dishonest, corrupt or weak 
+
+But it can also include legitimate criticism.
+
+--
+
+The goals of negative campaigning are to 
+  + Dissuade people from voting for opponents
+  + Or mobilize base against opponents
+  
+Although evidence shows that the effects of negative campaigning are highly context-dependent.
+  
+&gt; Nai, A., &amp; Walter, A. S. (2015). How Negative Campaigning Impinges on the Political Game: a Literature Overview. New Perspectives on Negative Campaigning: Why Attack Politics Matters.
+
+---
+
+## Backlash effect
+
+Negative advertising can backfire because voters feel sympathetic toward candidates under attack (Walter &amp; van der Eijk, 2019).
+
+--
+
++ Reseachers have first documented the backlash effects in 1980s methods (Garramone, 1984; Hill, 1989)
+
++ Meta-analysis confirms a backlash effect in 33 out of 40 studies (Lau et al., 2009)
+
+--
+
++ Backlash effect can be dependent on voter (and candidate) characteristics
+
+
+for example: Krupnikov and Piston (2015) find that backlash against African-American attack sponsors is greater among white voters.
+
+--
+
+Advertisers seem to be aware of potential backlash effects and take advantage of the situation when they don't have to fear it:
+
+Outside groups are more likely to use negative ads when they conceal their donor information (Chand 2017)
+
+---
+
+
+## Microtargeting and Negative ads
+
+*Does microtargeting help manage the risk of potential backlash effects?*
+
+Microtargeting may lower the risk of backlash effects because:
+
++ Negative messages can be targeted towards individuals who are most susceptible to them
+
+--
+  
++ Negative campaigning is seen as undesirable and harmful by the public
+    + (Mutz and Reeves 2005; Mattes and Redlawsk 2014)
+
+--
+
++ A smaller range of individuals are affected if there were to be a backlash
+
+*Hypotheses:*
+
+&gt; H1: Microtargeted ads from political campaigns are more negative than ads targeted at more general audiences.
+
+&gt; H2: For outside groups we should not find this microtargeting effect because they are less concerned about reputational hits.
+
+---
+
+
+## Microtargeting and Negative ads
+
+Some literature on this effect:
+
++ Fowler et al. (2020) analyze TV and Facebook and find the latter to be more positive
+  + Campaigns are more likely to have lists of supporters and they are less targeted with negative ads
+  + However: only compares TV ads with Facebook and does not differentiate between levels of targeting
+  
++ Jain and Wood (2020) analyze Facebook ad library data
+  + Computer Science pre-print, does not go in a lot of detail but they do find a positive effect of microtargeting on tone
+  + However: measure of microtargeting is just received impressions
+
+---
+
+## Measurement
+
++ Negative Ads
+  + Perspective API (Toxicity)
+      
+--
+  
++ Microtargeting
+
+&gt; `Potential Reach` estimates how many people your ad could potentially reach depending on the targeting and ad placement options you select while creating an ad. ~Facebook Ad Library
+
+--
+
+.pull-left[
++ 100 - 1.000 individuals reached
++ 1.001 - 5.000
++ 5.001 - 10.000
++ 10.001 - 50.000
++ 50.001 - 100.000
++ 100.001 - 500.000
++ 500.001 - 1 million
++ +1 million
+]
+
+.pull-right[
+  &lt;br&gt;
+  &lt;br&gt;
+  &lt;br&gt;
+  The smaller the reach the more microtargeted is an advertisement.
+]
+
+
+
+---
+
+
+
+## Some very (!) prelimary results 
+
+Based on data from the FB Ad library on the US 2020 election
+
+Convenience sample:
+
+322.695 ads placed by Biden and Trump Facebook pages (incl. Party accounts) between April and November 2020
+  
+
+&lt;center&gt;  
+
+&lt;br&gt;
+&lt;br&gt;
+
+Note: Data collection still under way so these are not all the ads yet!
+
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;/center&gt;
+
+---
+
+
+class: center, middle, inverse
+
+## Perspective API
+
+Perspective API provides a machine learning model trained by Google.
+
+Here I will be using `TOXICITY` model to get at the negativity of the ads.
+
+
+---
+
+### Microtargeted ads (potential reach &lt;= 10.000 individuals) appear to be more toxic on average
+
+![](images/overall_prsp.png)
+
+
+---
+
+class: center, middle, inverse
+
+
+## Paper II: Targeting different voters with different messages
+
+---
+
+## Paper II: Targeting different voters with different messages
+
+Alleged problems of microtargeting:
+
+Through microtargeting parties might  present themselves as one-issue party to each voter and make different promises to different people (Zuiderveen Borgesius et al., 2018).
+
+--
+
+For voters it becomes hard to track what a party actually stands for or what their priorities are. 
+
+A political campaign may disregard people 
+  + who are not politically involved
+  + they might ignore people who the campaign thinks cannot be swayed to their side (Turow 2012). 
+
+---
+
+## Research Question
+
+
+Given that microtargeting lends itself to message personalization, we can reasonably expect that parties will make use of PMT to tailor the "right" message to the "right" voter. 
+
+For example, the Biden campaign in the United States may target older generations with messages on Trump's failure on the Corona virus response since they are more endangered by the virus.
+
+--
+
+The main research questions of this study are: 
+
+&gt; How do political advertisers use targeted political ads? 
+
+&gt; Do they tailor their messages to certain voter groups and if so, to which degree and with which messages?
+
+
+---
+
+## Methods
+
+In order to understand whether different voter groups are targeted with different topics, we can make use of structural topic models (Roberts et al. 2014). 
+
+
+A different approach would be to use supervised machine learning:
+
+1. annotate a sample of ads as a training dataset
+2. label ads as attack ads, contrast ads, promotion ads
+3. label by topic (economy, immigration, health care, environment, etc.) (Qi et al. 2016).
+
+Need to work on particular hypotheses and what countries I want to consider.
+
+---
+
+class: center, middle, inverse
+
+
+## Paper III: Effects of being exposed to Microtargeted Campaign
+
+---
+
+
+
+## Paper III: Effects of being exposed to Microtargeted Campaign
+
+
+
+This research plans to examine the effects of political microtargeting (PMT) on people
+
+Leveraging an experimental design that manipulates the condition whether people see or don't see targeted political ads on Facebook. 
+
+The main aim of this paper would be to find out about the various positive and negative consequences that being exposed to targeted political ads might have. 
+
+---
+
+## Research Question
+
+Microtargeted political adsmcould 
+
++ encourage citizens to vote on election day, 
++ increase other forms of political participation (protesting, debating)
++ increase citizens ' political literacy, and help citizens make more educated decisions about voting
+
+--
+
+On the other hand, political parties could misuse political microtargeting to
++ increase political polarization
++ facilitate the spread of misinformation 
++ suppress vote likelihood. 
+
+&gt; The research question of this study is: what are the effects of being exposed to targeted political ads on Facebook during the 2021 German general elections?
+
+---
+
+
+## Hypotheses
+
+&gt; H1: Being exposed to microtargeted ads increases political engagement and the likelihood to vote.
+
+&gt; H2: Being exposed to microtargeted ads increases perceived understanding of the positions of political parties that are targeting them.
+
+&gt; H3: People exposed to microtargeted  ads would indicate that their personal positions on a range of issues aligns more closely with parties that they feel sympathetic to, assuming that tailored messaging was able to convince them successfully
+
+&gt; H4: Being exposed to microtargeted ads increases affective polarization.
+
+---
+
+
+## Research Design 
+
+&lt;img src="images/design.png" width="1025" style="display: block; margin: auto;" /&gt;
+
+The treatment group would be exposed to political ads on Facebook and the control group would not be. 
+
+We let participants complete a "Pre-Survey" roughly one month before the elections.
+ 
+---
+
+
+## Research Design 
+
+&lt;img src="images/design.png" width="1025" style="display: block; margin: auto;" /&gt;
+
+
+After they completed the "Pre-Survey" participants will be randomized into either the treatment or the control condition.  In the treatment condition, participants will be advised to install the "Who Targets me" browser plug-in.
+
+ 
+---
+
+
+## Research Design 
+
+&lt;img src="images/design.png" width="1025" style="display: block; margin: auto;" /&gt;
+
+
+For the control condition, participants would install an Adblocker that blocks ads on Facebook. 
+
+Finally, we check in one week after the election with a "Post-Survey", where we ask about our target measures (again).
+
+---
+
+## Problems and Limitations
+	
+Shown ads will only be collected on the Desktop computer with a browser that has the Who Targets Me plugin installed. 
+
++ This means we will not be able to block or collect ads that are seen on mobile phones. 
+
++ Possible course correction: in surveys they are presented, ask how often they use the FB mobile app vs. the Desktop app and account for that variation in the model 
++ potentially filter out those that only/mostly use the mobile app in a separate model. 
++ Or: Just try to recruit people who mostly use FB on their Desktop.
+
+--
+
+What are the ethical and legal implications of paying people to block political ads during an election season? Is that something that we can do?
+
+--
+
+Another problem is that users will know that certain parties are trying to target them since the Who Targets Me app will provide them with that information, and such knowledge might produce so-called "chilling-effects" and alter their behavior (Marder et al. 2016).
+
+---
+
+## Literature
+
+
+See attached paper for literature.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
