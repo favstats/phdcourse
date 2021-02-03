@@ -23,33 +23,10 @@ class: center, middle, inverse
 
 ## Main research questions:
 
-### 1. How are political ads microtargeted in practice?
-### 2. What is the effect of being exposed to microtargeted political campaigns?
+### 1. How are political ads microtargeted in practice? (Paper I and II)
+### 2. What is the effect of being exposed to microtargeted political campaigns? (Paper III)
 
 
----
-
-## Paper ideas
-
-1. How are political ads microtargeted in practice?
-
-  + Paper I: Going Micro to Go Negative
-  
-     + What role does microtargeting play for negative campaigning?
-     
---
-
-  + Paper II: Targeting different voters with different messages
-  
-     + How do political advertisers use targeted political ads, do they tailor their messages to certain voter groups and if so, to which degree and with which messages?
-     
---
-  
-2. What is the effect of being exposed to microtargeted political campaigns?
-
-  + Paper III: Effects of being exposed to Microtargeted Campaign
-  
-      + What are the effects of being exposed to targeted political ads on Facebook during the 2021 German general elections?
 
 ---
 
@@ -59,27 +36,85 @@ class: center, middle, inverse
 
 ## Paper I: Going Micro to Go Negative
 
+Research Question: 
+
+What role does microtargeting play for negative campaigning?
+
+---
+
+class: center, middle, inverse
+
+## Negative campaigning
+
+*"going negative"*
+
 ---
 
 ## Negative campaigning
 
-Negative advertising is a type of advertising that highlights alleged weaknesses of the competitor.
-
-Negative campaign tactics can include painting an opponent as:
-
-+ dishonest, corrupt or weak 
-
-But it can also include legitimate criticism.
+Negative campaigning is a type of advertising that highlights alleged weaknesses of the competitor.
 
 --
 
-The goals of negative campaigning are to 
-  + Dissuade people from voting for opponents
-  + Or mobilize base against opponents
+*However:* Negative ads are not just negative ads
+
+According to Brooks & Geer (2012) negative campaigning entails:
+
++ *civil* negative ads
+
+  + legitimate criticism of the opponent
   
-Although evidence shows that the effects of negative campaigning are highly context-dependent.
-  
-> Nai, A., & Walter, A. S. (2015). How Negative Campaigning Impinges on the Political Game: a Literature Overview. New Perspectives on Negative Campaigning: Why Attack Politics Matters.
+--
+
++ *uncivil* negative ads 
+
+  + "disrespectful, poisonous and hyperbolic [...]" language that "break norms of conversation [...]" (Otto et al. 2020)
+
+
+<br>
+
+> Let's take a closer look at incivility as a form of negative advertising
+
+---
+
+class: center, middle, inverse
+
+## Political Incivility
+
+*Is it good to be bad?*
+
+---
+
+## Political Incivility
+
+Acoording to Mutz (2016) political incivility can:
+
+ + lower trust in government
+
+ + reduce faith in institutions 
+
+ + lessen respect for opposing views
+
+--
+
+**But** it can also: 
+
++ generate stronger interest in voting & in politics more generally (Herbst 2010)
+
++ increase the memorability of the topics discussed; also known as *negativity bias* (Sydnor 2019)
+
+---
+
+
+class: center, middle, inverse
+
+## Backlash effect
+
+*When attacking your opponent backfires*
+
+--
+
+*or: when it's bad to be bad*
 
 ---
 
@@ -87,24 +122,31 @@ Although evidence shows that the effects of negative campaigning are highly cont
 
 Negative advertising can backfire because voters feel sympathetic toward candidates under attack (Walter & van der Eijk, 2019).
 
---
-
-+ Reseachers have first documented the backlash effects in 1980s methods (Garramone, 1984; Hill, 1989)
-
-+ Meta-analysis confirms a backlash effect in 33 out of 40 studies (Lau et al., 2009)
+Meta-analysis confirms a backlash effect in 33 out of 40 studies (Lau et al., 2009)
 
 --
 
-+ Backlash effect can be dependent on voter (and candidate) characteristics
+Backlash effect can be dependent on voter (and candidate) characteristics:
 
+ + Backlash towards African-American attack sponsors is greater among white voters (Krupnikov and Piston 2015)
 
-for example: Krupnikov and Piston (2015) find that backlash against African-American attack sponsors is greater among white voters.
+ + Nai & Maier (2020) also demonstrate that:
 
 --
 
-Advertisers seem to be aware of potential backlash effects and take advantage of the situation when they don't have to fear it:
+    + people high in conflict avoidance significantly reduce rating of the **attack sponsor**
 
-Outside groups are more likely to use negative ads when they conceal their donor information (Chand 2017)
+    + individuals high in psychopathy traits rate the **target more negatively**
+
+
+---
+
+
+class: center, middle, inverse
+
+## Microtargeting and Negative ads
+
+*"going micro"*
 
 ---
 
@@ -137,26 +179,36 @@ Microtargeting may lower the risk of backlash effects because:
 
 ## Microtargeting and Negative ads
 
-Some literature on this effect:
+Literature that have looked at this is scarce but two examples stood out:
 
 + Fowler et al. (2020) analyze TV and Facebook and find the latter to be more positive
+
   + Campaigns are more likely to have lists of supporters and they are less targeted with negative ads
+
   + However: only compares TV ads with Facebook and does not differentiate between levels of targeting
   
+--
+
+<br>
+  
 + Jain and Wood (2020) analyze Facebook ad library data
+
   + Computer Science pre-print, does not go in a lot of detail but they do find a positive effect of microtargeting on tone
+
   + However: measure of microtargeting is just received impressions
+
 
 ---
 
 ## Measurement
 
-+ Negative Ads
++ Dependent Variable: Negativity/Incivility
   + Perspective API (Toxicity)
+  + Prediction by supervised machine learning model trained on incivil/civil negative & positive ads
       
 --
   
-+ Microtargeting
++ Independent Variable: Microtargeting
 
 > `Potential Reach` estimates how many people your ad could potentially reach depending on the targeting and ad placement options you select while creating an ad. ~Facebook Ad Library
 
@@ -181,51 +233,6 @@ Some literature on this effect:
 ]
 
 
-
----
-
-
-
-## Some very (!) prelimary results 
-
-Based on data from the FB Ad library on the US 2020 election
-
-Convenience sample:
-
-322.695 ads placed by Biden and Trump Facebook pages (incl. Party accounts) between April and November 2020
-  
-
-<center>  
-
-<br>
-<br>
-
-Note: Data collection still under way so these are not all the ads yet!
-
-<br>
-<br>
-
-</center>
-
----
-
-
-class: center, middle, inverse
-
-## Perspective API
-
-Perspective API provides a machine learning model trained by Google.
-
-Here I will be using `TOXICITY` model to get at the negativity of the ads.
-
-
----
-
-### Microtargeted ads (potential reach <= 10.000 individuals) appear to be more toxic on average
-
-![](images/overall_prsp.png)
-
-
 ---
 
 class: center, middle, inverse
@@ -233,45 +240,43 @@ class: center, middle, inverse
 
 ## Paper II: Targeting different voters with different messages
 
+*RQ1: How do political advertisers microtarget political ads online?*
+
+*RQ2: Do political advertisers tailor their messages to certain voter groups and if so, to which degree and with which messages?*
+
 ---
 
 ## Paper II: Targeting different voters with different messages
 
-Alleged problems of microtargeting:
+Through microtargeting:
 
-Through microtargeting parties might  present themselves as one-issue party to each voter and make different promises to different people (Zuiderveen Borgesius et al., 2018).
++ parties might present themselves as one-issue party to each voter 
++ make different promises to different (groups of) people (Zuiderveen Borgesius et al., 2018).
 
 --
 
 For voters it becomes hard to track what a party actually stands for or what their priorities are. 
 
-A political campaign may disregard people 
-  + who are not politically involved
-  + they might ignore people who the campaign thinks cannot be swayed to their side (Turow 2012). 
-
----
-
-## Research Question
-
-
-Given that microtargeting lends itself to message personalization, we can reasonably expect that parties will make use of PMT to tailor the "right" message to the "right" voter. 
-
-For example, the Biden campaign in the United States may target older generations with messages on Trump's failure on the Corona virus response since they are more endangered by the virus.
-
 --
 
-The main research questions of this study are: 
+We can reasonably expect that parties will make use of PMT to tailor the "right" message to the "right" voter. 
 
-> How do political advertisers use targeted political ads? 
+For example:
 
-> Do they tailor their messages to certain voter groups and if so, to which degree and with which messages?
+The Biden campaign in the US may target older generations with messages on Trump's failure on the Corona virus response since they are more endangered by the virus.
 
+
+<!-- A political campaign may disregard people  -->
+<!--   + who are not politically involved -->
+<!--   + they might ignore people who the campaign thinks cannot be swayed to their side (Turow 2012).  -->
 
 ---
 
 ## Methods
 
 In order to understand whether different voter groups are targeted with different topics, we can make use of structural topic models (Roberts et al. 2014). 
+
+--
 
 
 A different approach would be to use supervised machine learning:
@@ -287,13 +292,17 @@ Need to work on particular hypotheses and what countries I want to consider.
 class: center, middle, inverse
 
 
-## Paper III: Effects of being exposed to Microtargeted Campaign
+## Paper III: Effects of being exposed to Microtargeted Campaigns
+
+Research Question: 
+
+What are the effects of being exposed to targeted political ads on Facebook during the 2021 German general elections?
 
 ---
 
 
 
-## Paper III: Effects of being exposed to Microtargeted Campaign
+## Paper III: Effects of being exposed to Microtargeted Campaigns
 
 
 
@@ -305,22 +314,26 @@ The main aim of this paper would be to find out about the various positive and n
 
 ---
 
-## Research Question
+## Effects of being exposed to Microtargeted Campaigns
 
-Microtargeted political adsmcould 
+Microtargeting could be used for positive goals (Zuiderveen Borgesius et al., 2018):
 
-+ encourage citizens to vote on election day, 
++ encourage citizens to vote on election day
+
 + increase other forms of political participation (protesting, debating)
-+ increase citizens ' political literacy, and help citizens make more educated decisions about voting
+
++ increase citizens' political literacy, and help citizens make more educated decisions about voting
 
 --
 
-On the other hand, political parties could misuse political microtargeting to
-+ increase political polarization
+On the other hand, political parties could misuse political microtargeting to:
+
++ increase affective polarization
+
 + facilitate the spread of misinformation 
+
 + suppress vote likelihood. 
 
-> The research question of this study is: what are the effects of being exposed to targeted political ads on Facebook during the 2021 German general elections?
 
 ---
 
@@ -331,7 +344,7 @@ On the other hand, political parties could misuse political microtargeting to
 
 > H2: Being exposed to microtargeted ads increases perceived understanding of the positions of political parties that are targeting them.
 
-> H3: People exposed to microtargeted  ads would indicate that their personal positions on a range of issues aligns more closely with parties that they feel sympathetic to, assuming that tailored messaging was able to convince them successfully
+> H3: People exposed to microtargeted ads feel more aligned with positions of political parties that are targeting them.
 
 > H4: Being exposed to microtargeted ads increases affective polarization.
 
@@ -377,27 +390,51 @@ Finally, we check in one week after the election with a "Post-Survey", where we 
 
 ---
 
-## Problems and Limitations
-	
-Shown ads will only be collected on the Desktop computer with a browser that has the Who Targets Me plugin installed. 
 
-+ This means we will not be able to block or collect ads that are seen on mobile phones. 
+class: center, middle, inverse
 
-+ Possible course correction: in surveys they are presented, ask how often they use the FB mobile app vs. the Desktop app and account for that variation in the model 
-+ potentially filter out those that only/mostly use the mobile app in a separate model. 
-+ Or: Just try to recruit people who mostly use FB on their Desktop.
+## That's it
 
 --
 
-What are the ethical and legal implications of paying people to block political ads during an election season? Is that something that we can do?
+### Thank you for listening
 
---
+![](https://media1.tenor.com/images/da0f7d5d93faa11dfc36db1e6c6fdf2a/tenor.gif?itemid=6159389)
 
-Another problem is that users will know that certain parties are trying to target them since the Who Targets Me app will provide them with that information, and such knowledge might produce so-called "chilling-effects" and alter their behavior (Marder et al. 2016).
 
 ---
 
 ## Literature
 
+Brooks, D. J., & Geer, J. G. (2007). Beyond Negativity: The Effects of Incivility on the Electorate. American Journal of Political Science, 51 (1), 1–16. https://doi.org/10.1111/j.1540-5907.2007.00233.x
 
-See attached paper for literature.
+Fowler, E. F., Franz, M. M., Martin, G. J., Peskowitz, Z., & Ridout, T. N. (2021). Political Advertising Online and Offline. American Political Science Review, 115 (1), 130–149. https://doi.org/10.1017/ S0003055420000696
+
+Jain, S., & Wood, A. K. (2020). Facebook Political Ads And Accountability: Outside Groups Are Most Negative, Especially When Microtargeting Or Hiding Donors. arXiv:2010.01730 [Cs]. Retrieved from http://arxiv.org/abs/2010.01730
+
+Lau, R. R., & Rovner, I. B. (2009). Negative Campaigning. Annual Review of Political Science, 12 (1), 285–306. https://doi.org/10.1146/annurev.polisci.10.071905.101448
+
+Mattes, K., & Redlawsk, D. P. (2014). The positive case for negative campaigning. University of Chicago Press.
+
+
+Mutz, D. C. (2016). In-your-face politics: The consequences of uncivil media. Princeton University Press.
+
+---
+
+## Literature
+
+Mutz, D. C., & Reeves, B. (2005). The New Videomalaise: Effects of Televised Incivility on Political Trust. American Political Science Review, 99 (1), 1–15. https://doi.org/10.1017/S0003055405051452
+
+Nai, A., & Maier, J. (2020). Is Negative Campaigning a Matter of Taste? Political Attacks, Incivility, and the Moderating Role of Individual Differences. American Politics Research, 1532673X2096554. https://doi.org/10.1177/1532673X20965548
+
+Otto, L. P., Lecheler, S., & Schuck, A. R. T. (2020). Is Context the Key? The (Non-)Differential Effects of Mediated Incivility in Three European Countries. Political Communication, 37 (1), 88–107. https://doi.org/10.1080/10584609.2019.1663324
+
+Sydnor, E. (2019). Disrespectful democracy: The psychology of political incivility. Columbia University Press.
+
+Walter, A. S., & Eijk, C. van der. (2019). Unintended consequences of negative campaigning: Backlash and second-preference boost effects in a multi-party context. The British Journal of Politics and International Relations, 21 (3), 612–629. https://doi.org/10.1177/1369148119842038
+
+---
+
+## Literature
+
+Zuiderveen Borgesius, F., Moeller, J., Kruikemeier, S., Ó Fathaigh, R., Irion, K., Dobber, T., . . . Vreese, C. H. de. (2018). Online Political Microtargeting: Promises and Threats for Democracy (SSRN Scholarly Paper No. ID 3128787). Rochester, NY: Social Science Research Network. Retrieved from Social Science Research Network website: https://papers.ssrn.com/abstract=3128787
