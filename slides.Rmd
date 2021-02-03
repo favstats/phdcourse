@@ -1,6 +1,6 @@
 ---
 title: "Political Microtargeting"
-subtitle: "How is microtargeting used in practice<br>and how does it effect citizens and society?"
+subtitle: "Safeguarding Democratic Values In Digital Political Practices"
 author: "PhD project by Fabio Votta<br><br>Supervisors: Claes de Vreese, Natali Helberger, Tom Dobber"
 date: "`r Sys.Date()`"
 output:
