@@ -130,7 +130,7 @@ Backlash effect can be dependent on voter (and candidate) characteristics:
 
  + Backlash towards African-American attack sponsors is greater among white voters (Krupnikov and Piston 2015)
 
- + Nai & Maier (2020) also demonstrate that:
+ + Nai & Maier (2020) also demonstrate that with incivil ads:
 
 --
 
@@ -153,11 +153,11 @@ class: center, middle, inverse
 
 ## Microtargeting and Negative ads
 
-*Does microtargeting help manage the risk of potential backlash effects?*
-
 Microtargeting may lower the risk of backlash effects because:
 
-+ Negative messages can be targeted towards individuals who are most susceptible to them
++ Negative messages can be targeted towards individuals who are most susceptible to them (Nai & Maier 2020)
+
+  + also means: people likely to dislike negativity can be excluded
 
 --
   
